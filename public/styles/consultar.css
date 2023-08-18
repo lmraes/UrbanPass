@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background: #201b2c;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-page {
+  width: 100vw;
+  /*view port, usando vw para adaptar ao tamanho do monitor*/
+  height: 100vh;
+  text-align: center;
+}
+
+.titulo {
+  display: block;
+  font-size: 2vw;
+  color: #00FF88;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: -2%;
+  margin-top: 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 14px;
+}
+
+.input-block {
+  position: relative;
+  margin-top: 7%;
+}
+
+.input-block input {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #495055;
+  width: 350px;
+  padding: 15px 15px;
+  border-radius: 1rem;
+  border: 2px solid #D9D9D9;
+  outline: none;
+}
+
+.input-block span.bilhete {
+  position: absolute;
+  margin: 17px 0;
+  padding: 0 4px;
+  font-family: Roboto, sans-serif;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  top: 0;
+  left: 17px;
+  transition: all 0.2s;
+  transform-origin: 0% 0%;
+  background: none;
+  pointer-events: none;
+}
+
+input#bilhete::-webkit-outer-spin-button,
+input#bilhete::-webkit-inner-spin-button {
+  display: none;
+}
+
+input#bilhete::placeholder {
+  font-size: 20px;
+}
+
+.btns-wrapper {
+  margin-top: 25px;
+}
+
+.button {
+  margin-top: 1%;
+  width: 110%;
+  padding: 16px 0px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-b {
+  width: 13%;
+  padding: 16px 0px;
+  margin: 9px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-b:hover,
+button.button:hover {
+  box-shadow: 0px 0px 10px 4px #33ffa0;
+}
+
+ /* === MODAL === */
+
+ .modal-container{
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.mostrar{
+  display: flex;
+  
+}
+
+.modal{
+  background:#2f2841;
+  width: 80%;
+  height: 80%;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border: 10px solid #00FF88;
+  box-shadow: 0 0 0 10px #2f2841;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  overflow: scroll;
+}
+
+.modal > h3{
+  font-size: 3vw;
+  color: beige;
+}
+
+.modal > h4{
+  font-size: 1.5vw;
+  color: beige;
+  padding: 25px;
+}
+
+.modal span {
+  color: beige;
+  font-size: 16px;
+}
+
+.modal p.data-bilhete {
+  color: beige;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.btn_modal{
+  width: 50%;
+  padding: 16px 0px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.modal .button:hover {
+box-shadow: 0px 0px 10px 4px #33ffa0;
+}
+
+.mostrar.modal{
+  animation: modal .3s;
+
+}
+
+.modal .recargas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.recargas .recarga {
+  display: flex;
+  column-gap: 20px;
+}

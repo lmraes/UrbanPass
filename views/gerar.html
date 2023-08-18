@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERAÇÃO</title>
+    <link rel="stylesheet" href="../public/styles/gerar.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="main-page">
+        <div class="left-page">
+            <img src="../public/assets/card.svg" class="image" alt="card img"> 
+        </div>
+        <div class="right-page">
+            <div class="card-terms">
+                <h1>REGRAS DE USO</h1>
+                <h3>O sistema de bilhete urbano tem como finalidade facilitar a automação da comercialização do transporte público. Um único
+                    bilhete será emitido para cada usuário que fizer o seu cadastro, fornecendo todos os dados necessários, e poderá ser utilizado
+                    como Bilhete Único, Duplo, 7 dias ou 30 dias, conforme o tipo de crédito adquirido pelo usuário.</h3>
+                 <form id="form_1">
+                  <p><input id="terms" class="terms" type="checkbox" name="terms" required> EU ACEITO AS REGRAS DE USO</p>
+                  <button>GERAR</button>
+              </form>
+              <a  href="../index.html"> <button class="btn-voltar"> VOLTAR </button></a> 
+      </div>
+  </div>
+</body>
+
+  <script src="/scripts/scriptInserirBilhete.js"></script>
+</html>

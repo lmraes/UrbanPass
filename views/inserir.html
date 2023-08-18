@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSIRA</title>
+
+    <link rel="stylesheet" href="../public/styles/inserir.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="main-page">
+        <div class="titulo">
+            <h1> INSIRA O CÓDIGO DO BILHETE </h1>
+            <span class="bilhete"></span>
+        </div>
+        <div class="input-block">
+            <form>
+                <input type="number" maxlength="6" name="bilhete" id="bilhete" required spellcheck="false" placeholder="Insira o número do bilhete">
+                <input type="hidden" class="tipo" name="tipo" id="tipo" value="">
+                <button class="button">CONFIRMAR</button>
+            </form>
+        </div>
+        <div class="btns-wrapper">
+            <div class="btns">
+                <a href="./consultar.html"><button class="btn-b"> HISTORICO</button></a>
+                <a href="../index.html"><button class="btn-b">TELA INICIAL</button></a> 
+                <a href="./recarga.html"><button class="btn-b"> VOLTAR </button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/scriptInserirRecarga.js"></script>
+    
+</body>
+</html>

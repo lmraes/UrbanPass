@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultar</title>
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <link rel="stylesheet" href="../public/styles/utilizar.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">
+            <a href="/">
+                <i class="ph-arrow-circle-left"></i>
+            </a>
+        </div>
+        <div class="barra"></div>
+
+        <div class="verificador-a">
+            <div class="verificador-b">
+                <div class="wrapper">
+                    <div class="tela">
+                        <form id="historico">
+                            <p>INSIRA O <br> CÓDIGO DO <br> SEU BILHETE</p>
+                            <input type="number" id="bilhete" name="bilhete" placeholder="Código..." value="">
+                        </form>
+                    </div>
+
+                    <div class="button">
+                        <button>CONFIRMAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-unico" class="modal-container">
+        <div class="modal">
+            <h3></h3>
+            <span class="bilheteDuplo"></span>
+            <h4></h4>
+            <span class="time"></span>
+                  
+            <button class="button">Ok</button>
+        </div>
+    </div>
+
+    <script src="/scripts/scriptUtilizaRecarga.js"></script>
+
+</body>
+
+</html>

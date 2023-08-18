@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url("/assets/check.svg");
+    background-color: #201b2c;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: center; /*eixo y centralizado*/
+}
+
+.page {
+    margin-top: 40px;
+}
+
+.page > h1 {
+    font-size: 35px;
+    color: #77ffc0;
+    display: flex; /*para as divs ficarem uma do lado da outra*/
+    justify-content: center; /*eixo x centralizado*/
+    align-items: center;/*eixo y centralizado*/
+    margin: 0%;
+    margin-top: 5%;
+    }
+
+.card-number {
+    padding: 60px 80px; /*margem eixo x e eixo y*/
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; /*primeiro é eixo x (direita ou esqueda), segundo é eixo y(pra cima ou pra baixo), terceiro é o blur e o quarto é a cor*/
+}
+
+.card-number > span {
+    color:beige;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.btns-page {
+    text-align: center;
+    margin-top: 50px;
+}
+.btns {
+    display: flex;
+    column-gap: 12px;
+}
+.btns a {
+    padding: 16px 12px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    transition: 200ms;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;    
+}
+
+.btns a:hover {
+    box-shadow: 0px 0px 10px 4px #33ffa0;
+}
+
+/*as media query abaixo são para o sistema ficar responsivo, ou seja, adaptando ao tamanho da tela*/
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position-y: top;
+    }
+
+    .btns-page {
+        margin-top: 20px;
+    }
+
+    .btns{
+        flex-direction: column;
+        row-gap: 12px;
+        margin-bottom: 50px;
+    }
+}

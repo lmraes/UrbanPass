@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSIRA</title>
+
+    <link rel="stylesheet" href="../public/styles/consultar.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="main-page">
+        <div class="titulo">
+            <h3>CONSULTAR HISTÓRICO DE USO</h3>
+            <h1> INSIRA O CÓDIGO DO BILHETE </h1>
+        </div>
+        <div class="input-block">
+            <form>
+                <input type="number" maxlength="6" name="bilhete" id="bilhete" required spellcheck="false" placeholder="Insira o número do bilhete">
+                <input type="hidden" class="tipo" name="tipo" value="">
+                <div><button class="button">CONFIRMAR</button></div>
+            </form>
+        </div>
+        <div class="btns-wrapper">
+            <div class="btns">
+                <a href="./recarga.html"><button class="btn-b">RECARREGAR</button></a>
+                <a href="../index.html"><button class="btn-b">TELA INICIAL</button></a> 
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-unico" class="modal-container">
+        <div class="modal">
+            <h3></h3>
+            <p class="data-bilhete"></p>
+            <div class="recargas">
+                <h3>RECARGAS: </h3>
+
+            </div>                  
+        </div>
+
+        <button class="btn_modal">OK</button>
+
+    </div>
+
+    <script src="/scripts/scriptConsulta.js"></script>
+    
+</body>
+</html>
